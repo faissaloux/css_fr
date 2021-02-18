@@ -89,7 +89,7 @@
             >
                 <span class="ti-location-pin"></span>
             </a>
-            <a href="/">
+            <a href="/" class="show-desktop">
                 <span class="lang-switcher">EN</span>
             </a>
         </div>
