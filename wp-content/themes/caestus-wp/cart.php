@@ -13,7 +13,7 @@
 </head>
 <a href="" id="button"></a>
 
-<body>
+<body class="cart-page">
     <?php require_once('includes/nav.php') ?>
     <section class="section cart-section">
         <div class="container">
@@ -55,13 +55,13 @@
                                 <div class="col-md-6 mb-sm px-0 mx-0">
                                     <div class="form-group">
                                         <label for="from" class="from"> Du </label>
-                                        <input type="text" readonly="true" placeholder="" class="form-control" name="from" id="firstDate">
+                                        <input type="text" readonly="true" placeholder="Du" class="form-control col-9" name="from" id="firstDate">
                                     </div>
                                 </div>
                               
                                 <div class="col-md-6 mb-sm px-0 mx-0">
-                                    <label for="to" class="to"> au </label>
-                                    <input type="text" readonly="true" placeholder="" class="form-control" name="to" id="secondDate">
+                                    <label for="to" class="to"> Au </label>
+                                    <input type="text" readonly="true" placeholder="Au" class="form-control col-9" name="to" id="secondDate">
                                   </div>       
                                   </div> 
                                   

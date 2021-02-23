@@ -1938,3 +1938,7 @@ nav #ajaxSearch{
 .top-nav{
     position: fixed;
 }
+
+.cart-page .footer_more_ul {
+    padding-left: 0;
+}
