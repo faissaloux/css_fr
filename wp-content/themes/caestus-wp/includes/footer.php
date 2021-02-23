@@ -22,6 +22,14 @@
             <div class="col-md-6 col-xl-3">
                 <h6 class="mb-4"><strong><?php echo $theme_setting['footer-social-media-title']; ?></strong></h6>
                 <div class="social text-center text-lg-left">
+                <?php if (!empty($theme_setting['instagram'])): ?>
+                    <span class="over-hidden" style="background-color: <?php echo $theme_setting['social-media-background']; ?>;">
+                        <a class="social social-instagram" href="<?php echo $theme_setting['instagram']; ?>">
+                            <div class="up d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></div>
+                            <div class="down d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></div>
+                        </a>
+                    </span>
+                <?php endif ?>
                 <?php if (!empty($theme_setting['facebook'])): ?>
                     <span class="over-hidden" style="background-color: <?php echo $theme_setting['social-media-background']; ?>;">
                         <a class="social social-facebook" href="<?php echo $theme_setting['facebook']; ?>">
@@ -35,14 +43,6 @@
                         <a class="social social-twitter" href="<?php echo $theme_setting['twitter']; ?>">
                             <div class="up d-flex justify-content-center align-items-center"><i class="fab fa-twitter"></i></div>
                             <div class="down d-flex justify-content-center align-items-center"><i class="fab fa-twitter"></i></div>
-                        </a>
-                    </span>
-                <?php endif ?>
-                <?php if (!empty($theme_setting['instagram'])): ?>
-                    <span class="over-hidden" style="background-color: <?php echo $theme_setting['social-media-background']; ?>;">
-                        <a class="social social-instagram" href="<?php echo $theme_setting['instagram']; ?>">
-                            <div class="up d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></div>
-                            <div class="down d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></div>
                         </a>
                     </span>
                 <?php endif ?>
