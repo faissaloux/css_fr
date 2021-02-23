@@ -25,20 +25,17 @@
                             aria-hidden="false"
                             style="width: 380px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
                     >
-                        <div>
-                            <a href="<?php echo get_the_post_thumbnail_url(); ?>" style="width: 100%; display: inline-block;" tabindex="0">
-                                <img src="<?php echo get_the_post_thumbnail_url(); ?>">
-                            </a>
-                        </div>
                     </div>
                   </div>
                </div>
             </div>
             <ul class="list-of-products-img" id="underlightgallery">
-            
-            <?php foreach(system::product_gallery(get_the_ID()) as $image): ?>
-               <a href="<?php echo $image; ?>" class="kj"> <img src="<?php echo $image; ?>"></a>
-            <?php endforeach; ?>
+               <a href="<?php echo get_the_post_thumbnail_url(); ?>" style="width: 100%; display: inline-block; border:none; height: 400px;" tabindex="0">
+                  <img src="<?php echo get_the_post_thumbnail_url(); ?>">
+               </a>
+               <?php foreach(system::product_gallery(get_the_ID()) as $image): ?>
+                  <a href="<?php echo $image; ?>" class="kj"> <img src="<?php echo $image; ?>"></a>
+               <?php endforeach; ?>
             </ul>
             <style>
                .product-3 {
