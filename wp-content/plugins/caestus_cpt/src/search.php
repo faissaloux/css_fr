@@ -28,11 +28,12 @@ class caestus_search {
 		$postids = $wpdb->get_col("select ID from $wpdb->posts where post_title LIKE '%".$this->query."%' ");
 
 		$args = array(
-			'post__in'		=> !empty($postids) ? $postids : array(0),
-			'post_type'		=> 'products_cpt',
-			'post_status' 	=> 'publish',
-			'orderby'		=> 'title',
-			'order'			=> 'asc'
+			'post__in'			=> !empty($postids) ? $postids : array(0),
+			'post_type'			=> 'products_cpt',
+			'posts_per_page'	=> -1,
+			'post_status' 		=> 'publish',
+			'orderby'			=> 'title',
+			'order'				=> 'asc'
 		);
 	
 		$result = new WP_Query($args);
